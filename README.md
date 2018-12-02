@@ -53,7 +53,7 @@ message(...)
     subtype = 邮件类型是plain还是html的。
     level = 当级别为2时，它以抄送发送邮件。当级别为3时，它以密送发送邮件。
 
-    level需要与rect一起使用。当级别不是1时，rct的列表值应该是两个。
+    level需要与rect一起使用。当级别不是1时，rect的列表值应该是两个。
 
 message_attach(...)
     sm.message_attach(sender,rect,attach,subject='SimpleMail',content='SimpleMail Mail sent',subtype='plain',level=1) -> str
@@ -81,7 +81,7 @@ message_attach(...)
     subtype = 邮件类型是plain还是html的。
     level = 当级别为2时，它以抄送发送邮件。当级别为3时，它以密送发送邮件。
 
-    level需要与rect一起使用。当级别不是1时，rct的列表值应该是两个。
+    level需要与rect一起使用。当级别不是1时，rect的列表值应该是两个。
 
 sendmail(...)
     sm.sendmail(send_mail, rect_mail, message) -> bool
