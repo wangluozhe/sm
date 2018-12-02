@@ -38,7 +38,7 @@ message(...)
     subject = Mail subject.
     content = Mail content.
     subtype = Mail Type is plain or html.
-    level = When the level is 1, it is sent at regular intervals. When the level is 2, it is sent by copy and sent at 3.
+    level = When the level is 2, it is sent at regular intervals. When the level is 3, it is sent by copy and sent at 3.
 
     Level needs to be used in conjunction with rect. When level is not 1, the list value of rect should be two.
 
@@ -51,7 +51,7 @@ message(...)
     subject = 邮件主题。
     content = 邮件内容。
     subtype = 邮件类型是plain还是html的。
-    level = 当级别为1时，它以抄送发送邮件。当级别为2时，它以密送发送邮件。
+    level = 当级别为2时，它以抄送发送邮件。当级别为3时，它以密送发送邮件。
 
     level需要与rect一起使用。当级别不是1时，rct的列表值应该是两个。
 
@@ -65,7 +65,7 @@ message_attach(...)
     subject = Mail subject.
     content = Mail content.
     subtype = Mail Type is plain or html.
-    level = When the level is 1, it is sent at regular intervals. When the level is 2, it is sent by copy and sent at 3.
+    level = When the level is 2, it is sent at regular intervals. When the level is 3, it is sent by copy and sent at 3.
 
     Level needs to be used in conjunction with rect. When level is not 1, the list value of rect should be two.
 
@@ -79,7 +79,7 @@ message_attach(...)
     subject = 邮件主题。
     content = 邮件内容。
     subtype = 邮件类型是plain还是html的。
-    level = 当级别为1时，它以抄送发送邮件。当级别为2时，它以密送发送邮件。
+    level = 当级别为2时，它以抄送发送邮件。当级别为3时，它以密送发送邮件。
 
     level需要与rect一起使用。当级别不是1时，rct的列表值应该是两个。
 
