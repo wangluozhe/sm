@@ -1,6 +1,7 @@
 # sm
 sm(Simple Mail)即简单邮件，它是基于python3中的smtplib模块进行的二次开发，功能跟smtplib没什么区别，但是其将繁琐的信息封装过程变得简单化。
 
+## SimpleMail类 ##
 SimpleMail(...)
     SimpleMail(smtp_server,port=25,protocol='SMTP') -> SimpleMail Object
 
@@ -15,6 +16,7 @@ SimpleMail(...)
     port = SMTP服务端口号，如果协议是SSL，使用465，可自定义端口号。
     protocol = 是使用SMTP或SSL的协议。
 
+## Login Function ##
 login(...)
     sm.login(send_user,send_pass) -> None
 
@@ -22,6 +24,7 @@ login(...)
     send_user = Mail User.
     send_pass = Mail Password.
 
+## 登录函数 ##
 login(...)
     sm.login(send_user,send_pass) -> None
 
@@ -29,6 +32,7 @@ login(...)
     send_user = 邮件用户。
     send_pass = 邮件密码。
 
+## Message Funtion ##
 message(...)
     sm.message_attach(sender,rect,subject='SimpleMail',content='SimpleMail Mail sent',subtype='plain',level=1) -> str
 
@@ -42,6 +46,7 @@ message(...)
 
     Level needs to be used in conjunction with rect. When level is not 1, the list value of rect should be two.
 
+## 生成邮件消息函数　##
 message(...)
     sm.message(sender,rect,subject='SimpleMail',content='SimpleMail Mail sent',subtype='plain',level=1) -> str
 
@@ -55,6 +60,7 @@ message(...)
 
     level需要与rect一起使用。当级别不是1时，rect的列表值应该是两个。
 
+## Message Attach Function ##
 message_attach(...)
     sm.message_attach(sender,rect,attach,subject='SimpleMail',content='SimpleMail Mail sent',subtype='plain',level=1) -> str
 
@@ -69,6 +75,7 @@ message_attach(...)
 
     Level needs to be used in conjunction with rect. When level is not 1, the list value of rect should be two.
 
+## 生成带附件的邮件消息函数 ##
 message_attach(...)
     sm.message_attach(sender,rect,attach,subject='SimpleMail',content='SimpleMail Mail sent',subtype='plain',level=1) -> str
 
@@ -83,6 +90,7 @@ message_attach(...)
 
     level需要与rect一起使用。当级别不是1时，rect的列表值应该是两个。
 
+## Send Mail Function ##
 sendmail(...)
     sm.sendmail(send_mail, rect_mail, message) -> bool
 
@@ -91,6 +99,7 @@ sendmail(...)
     rect_mail = The recipient of a message represents one or more recipients in the form of a list.
     message = sm.message or sm.message_attach.
 
+## 发送邮件函数 ##
 sendmail(...)
     sm.sendmail(send_mail, rect_mail, message) -> bool
 
