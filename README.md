@@ -1,4 +1,4 @@
-# sm
+# sm Mail Send Modular
 sm(Simple Mail)即简单邮件，它是基于python3中的smtplib模块进行的二次开发，功能跟smtplib没什么区别，但是其将繁琐的信息封装过程变得简单化。
 
 ## SimpleMail类 ##
