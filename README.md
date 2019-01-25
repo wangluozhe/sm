@@ -46,7 +46,7 @@ message(...)
 
     Level needs to be used in conjunction with rect. When level is not 1, the list value of rect should be two.
 
-## 生成邮件消息函数　##
+## 生成邮件消息函数 ##
 message(...)
     sm.message(sender,rect,subject='SimpleMail',content='SimpleMail Mail sent',subtype='plain',level=1) -> str
 
