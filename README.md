@@ -2,14 +2,14 @@
 sm(Simple Mail)即简单邮件，它是基于python3中的smtplib模块进行的二次开发，功能跟smtplib没什么区别，但是其将繁琐的信息封装过程变得简单化。
 
 ## SimpleMail类 ##
-SimpleMail(...)
+> SimpleMail(...)
     SimpleMail(smtp_server,port=25,protocol='SMTP') -> SimpleMail Object
 
     smtp_server = SMTP server address, such as 163 smtp@163.com.
     port = SMTP service port number, if the protocol is SSL, use 465, customizable port number.
     protocol = Is the protocol used SMTP or SSL.
 
-SimpleMail(...)
+> SimpleMail(...)
     SimpleMail(smtp_server,port=25,protocol='SMTP') -> SimpleMail Object
 
     smtp_server = SMTP服务器地址，如163的smtp@163.com。
@@ -17,7 +17,7 @@ SimpleMail(...)
     protocol = 是使用SMTP或SSL的协议。
 
 ## Login Function ##
-login(...)
+> login(...)
     sm.login(send_user,send_pass) -> None
 
     Used to login to SMTP server.
@@ -25,7 +25,7 @@ login(...)
     send_pass = Mail Password.
 
 ## 登录函数 ##
-login(...)
+> login(...)
     sm.login(send_user,send_pass) -> None
 
     用于登录到SMTP服务器。
@@ -33,7 +33,7 @@ login(...)
     send_pass = 邮件密码。
 
 ## Message Funtion ##
-message(...)
+> message(...)
     sm.message_attach(sender,rect,subject='SimpleMail',content='SimpleMail Mail sent',subtype='plain',level=1) -> str
 
     Generate a mail message.
@@ -47,7 +47,7 @@ message(...)
     Level needs to be used in conjunction with rect. When level is not 1, the list value of rect should be two.
 
 ## 生成邮件消息函数 ##
-message(...)
+> message(...)
     sm.message(sender,rect,subject='SimpleMail',content='SimpleMail Mail sent',subtype='plain',level=1) -> str
 
     生成邮件消息。
@@ -61,7 +61,7 @@ message(...)
     level需要与rect一起使用。当级别不是1时，rect的列表值应该是两个。
 
 ## Message Attach Function ##
-message_attach(...)
+> message_attach(...)
     sm.message_attach(sender,rect,attach,subject='SimpleMail',content='SimpleMail Mail sent',subtype='plain',level=1) -> str
 
     Generate a mail message, including attachments.
@@ -76,7 +76,7 @@ message_attach(...)
     Level needs to be used in conjunction with rect. When level is not 1, the list value of rect should be two.
 
 ## 生成带附件的邮件消息函数 ##
-message_attach(...)
+> message_attach(...)
     sm.message_attach(sender,rect,attach,subject='SimpleMail',content='SimpleMail Mail sent',subtype='plain',level=1) -> str
 
     生成邮件消息，包括附件。
@@ -91,7 +91,7 @@ message_attach(...)
     level需要与rect一起使用。当级别不是1时，rect的列表值应该是两个。
 
 ## Send Mail Function ##
-sendmail(...)
+> sendmail(...)
     sm.sendmail(send_mail, rect_mail, message) -> bool
 
     If the message is sent successfully, it will return to true, otherwise it will return to false.
@@ -100,7 +100,7 @@ sendmail(...)
     message = sm.message or sm.message_attach.
 
 ## 发送邮件函数 ##
-sendmail(...)
+> sendmail(...)
     sm.sendmail(send_mail, rect_mail, message) -> bool
 
     如果消息发送成功，它将返回true，否则它将返回false。
